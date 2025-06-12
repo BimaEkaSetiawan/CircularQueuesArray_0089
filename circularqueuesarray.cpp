@@ -77,5 +77,15 @@ class Queues
                 return;
             }
             cout << "\nElelments in the queue are....\n";
+
+            if (front_position <= rear_position)
+            {
+                while (front_position <= rear_position)
+                {
+                    cout << queue_array[front_position] << "  ";
+                }
+                cout << endl;
+            }
+            
         }
 };
